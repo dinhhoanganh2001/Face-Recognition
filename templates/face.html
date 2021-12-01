@@ -1,6 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Face Detection</title>
+    <link rel = "stylesheet" href = {{ url_for('static', filename='face.css')}}/>
+    <script>
+        var linkserver = "http://127.0.0.1:5000";
+    </script>
+  </head>
+<html>
+
+
+  <body>
+    <head>
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,11 +38,8 @@
             <li class="nav-item active">
                 <a class="nav-link" href="{{ url_for('face') }}">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="{{ url_for('product') }}">Shopping</a>
-            </li>
             <li class = "nav-item active">
-                <a class="nav-link" href="{{ url_for('view') }}">Manager</a>
+                <a class="nav-link" href="{{ url_for('history') }}">History</a>
             </li>
         </ul>
         {% if current_user.is_authenticated %}
@@ -65,26 +75,27 @@
            {% endfor %}
         {% endif %}
       {% endwith %}
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-primary" style="color:white">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h1 class="display-4 font-weight-normal">FACE DETECTION</h1>
-            <p class="lead font-weight-normal" style = "color:white">Start purchasing products by clicking the link below</p>
-            <a class="nav-link" href="{{ url_for('product') }}" style="color:white;">Get Started</a>
-        </div>
-        <div class="product-device box-shadow d-none d-md-block"></div>
-        <div class="product-device product-device-2 box-shadow d-none d-md-block"></div>
+    <div class="welcome"><h3 >Live Streaming</h3></div>
+    <div class="container2">
+        <img src="{{ url_for('video_pause') }}" width="100%">
+    </div>
+    <div class = "bar">
+        <a href = "{{url_for('predict')}}"><button>Start</button></a>
     </div>
     <div class = "bottom">
-        <div>
-            <p>
-            Group Bonjour le Monde! <br>
-            Programming Intergration Project
-            </p>
-        </div>
+      <div>
+          <p>
+          Group Bonjour le Monde! <br>
+          Programming Intergration Project
+          </p>
+      </div>
 
 
 
-            
+          
 
-    </div>
-   </body>
+  </div>
+    </body>
+
+
+</html>

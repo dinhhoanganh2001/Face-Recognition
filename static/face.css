@@ -1,0 +1,20 @@
+.container2{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    left: 30%;
+    top: 20%;
+}
+
+.welcome{
+    top: 5%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.bar{
+    position: absolute;
+    top:15%;
+    width: 10%;
+    left: 47%;
+}
