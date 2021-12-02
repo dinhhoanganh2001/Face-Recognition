@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block content %}
+    
+    <div class = "infobar">
+        <img src = "https://play-lh.googleusercontent.com/EEQ6z_3i9Co5ZMdp7qCSGiFd9ionjxLz3rMmDWVO1wDwUNi-EaEZFm4fyG5GWMrt5w">
+        <p>
+            Version: 2021.2.3 <br>
+            Build: 212.5457.59 <br>
+            20 October 2021
+        </p>
+        <div class = "link">
+            <div><a href = "#">System requirements</a> </div>
+            <div><a href = "#">Installation Instructions</a></div>
+            <div><a href = "#">Other versions</a></div>
+            <div><a href = "#">Third-party software</a></div>
+        </div>
+        <div class = "content">
+            <h5>Purchasing Face Detection</h5>
+            <h4>Category: {{data[3]}}</h4>
+            <h4>Type: {{data[1]}}</h4>
+            <h4 style="color: red; font-size: 40px; padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0,0,0,0.4)">Price: {{data[2]}} VND</h4>
+            <a href = "/updatehistory/{{data[0]}}"><button>Payment</button></a>
+        </div>
+    </div>
+{% endblock %}
