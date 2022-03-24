@@ -47,5 +47,5 @@ pip install requirements.txt
 * Database: use another database server such as Microsoft SQL Server
 
 ## References
-[1] Ian Sommerville (2011), Software Engineering (ninth edition).
+[1] Ian Sommerville (2011), Software Engineering (ninth edition).  
 [2] Fran ̧cois Chollet (2021),Deep Learning with Python, Second Edition.
