@@ -31,10 +31,10 @@ pip install requirements.txt
 * Since I used pre-trained model to get embedding, so I didn't have to train a network to learn the similarity and difference between faces, that's mean I only need the image database of members in the house. 
 
 
-## Mock-up
-<p style="text-align:center;"><img src="https://firebasestorage.googleapis.com/v0/b/pipai212.appspot.com/o/welcome.png?alt=media&token=9c8cd259-0833-4ff9-b7e8-0f4c7ec59881" width="500"></p>
+## Web Application
+<p style="text-align:center;"><img src="https://firebasestorage.googleapis.com/v0/b/pipai212.appspot.com/o/Product_des.png?alt=media&token=4acc0d22-ad7a-44a0-97d8-4c02d15beab3" width="500"></p>
 
-<p style="text-align:center;"><img src="https://firebasestorage.googleapis.com/v0/b/pipai212.appspot.com/o/history.PNG?alt=media&token=437c8532-8a48-498d-8300-f888eff0c850" width="500"></p>
+<p style="text-align:center;"><img src="https://firebasestorage.googleapis.com/v0/b/pipai212.appspot.com/o/play.png?alt=media&token=3b63f969-c8ee-41c5-ab37-6562693e2c3d" width="500"></p>
 
 ## Challenges
 * Lacking of cloud server to maintain the python code, I have to run the Python script on local host.
